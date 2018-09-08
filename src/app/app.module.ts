@@ -13,6 +13,12 @@ import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule }    from '@angular/common/http';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { SalesComponent } from './sales/sales.component';
+import { StockComponent } from './stock/stock.component';
+import { AdminComponent } from './admin/admin.component';
+import { NewuserComponent } from './newuser/newuser.component';
+import { ChangepwdComponent } from './changepwd/changepwd.component';
+import { LogoutComponent } from './logout/logout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +28,13 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
     LoginComponent,    
     DashboardComponent,
     PageNotFoundComponent,
-    SignupComponent
+    SignupComponent,
+    SalesComponent,
+    StockComponent,
+    AdminComponent,
+    NewuserComponent,
+    ChangepwdComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

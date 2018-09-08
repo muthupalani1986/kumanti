@@ -4,3 +4,16 @@
     Muthupalani1986@gmail.co
     m</div>
 </div>
+<div id="navmenus">
+  <ul class="list-unstyled nav-parent">      
+    <li *ngFor="let item of sideNavMens; let i = index" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}">
+        <a [routerLink]="[item.url]">{{item.name}} <i class="arrow float-right" *ngIf="item.childs"></i></a>
+        <ul class="list-unstyled nav-child">
+          <li *ngFor="let childItem of item.childs; let j = index" routerLinkActive="active">
+              <a [routerLink]="[item.url+'/'+childItem.url]" >{{childItem.name}}</a>
+          </li>
+        </ul>
+    </li>
+  </ul>
+</div>

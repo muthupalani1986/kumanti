@@ -11,19 +11,23 @@
     -webkit-transition: margin-left 2s,width 2s; /* Safari */
     transition: margin-left 2s,width 2s;
     border-right:solid 1px #ECECEC;
+    background-image: linear-gradient(#ECECEC, #FBE3D7);
+    overflow: auto;
   }
   #content.active{
     margin-left: 250px;
-    
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s; 
   }
   #sideNav.active{
     width: 250px; 
     margin-left: 0;
     -webkit-transition: width 1s; /* Safari */
     transition: width 1s; 
+    
   }
   .side-nav-header{
-    background-color: #1E1E1E;
+    background-color: #7F7F7F;
     height: 80px;
     color:#ffffff;
   }
@@ -45,14 +49,24 @@
   }
   .header-row{
     background-color:#ffffff;
-    min-height:60px;
+    height:40px;
+    position: fixed;
+    top:0;
+    z-index: 8888;
+    width: 100%;
   }
   .footer-row{
     background-color:#FE7C31;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    width: 100%;
   }
   .mid-container{
     background-image: linear-gradient(#ECECEC, #ffffff);
     padding:5px 0 5px 0;
+    min-height: 100vh;
+    margin-top:40px;
     }
     .logo-txt-left{
       color:#FE7C31;
@@ -65,19 +79,3 @@
       background-color: #FE7C31!important;
       border-color: #FE7C31 !important;
     }
-/* Extra small devices (portrait phones, less than 576px)*/
-/* No media query since this is the default in Bootstrap*/
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { }
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-
- }
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
