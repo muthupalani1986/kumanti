@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: '**', component: PageNotFoundComponent }
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{useHash:true})],
   declarations: [],
   exports:[RouterModule]
 })
