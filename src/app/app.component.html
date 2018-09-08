@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="row">  
+    <div class="col-md-12">
+      <div id="sideNav" [ngClass]="{'active':sideNavStatus}">      
+        <app-sidenav></app-sidenav>
+      </div>    
+      <div id="content" [ngClass]="{'active':sideNavStatus}">          
+          <app-header></app-header>
+          <div class="row mid-container">
+              <div class="col-md-12">
+                  <router-outlet></router-outlet>
+                </div>
+          </div>          
+          <app-footer></app-footer>
+      </div>
+    </div>
+  </div>
+  <ngx-spinner size = "medium"></ngx-spinner>
+  </div>

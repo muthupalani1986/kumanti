@@ -1,0 +1,83 @@
+/* Add application styles & imports to this file! */
+
+#sideNav{
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    background-color: #F9F6F6;
+    margin-left: -250px;
+    z-index: 9999;
+    width: 0;
+    -webkit-transition: margin-left 2s,width 2s; /* Safari */
+    transition: margin-left 2s,width 2s;
+    border-right:solid 1px #ECECEC;
+  }
+  #content.active{
+    margin-left: 250px;
+    
+  }
+  #sideNav.active{
+    width: 250px; 
+    margin-left: 0;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s; 
+  }
+  .side-nav-header{
+    background-color: #1E1E1E;
+    height: 80px;
+    color:#ffffff;
+  }
+  .nav-header-content{
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    top:10px;
+  }
+  .custom-toggler.navbar-toggler {    
+      color: rgba(0,0,0,.5);
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,55,244, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  .navbar-light{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .header-row{
+    background-color:#ffffff;
+    min-height:60px;
+  }
+  .footer-row{
+    background-color:#FE7C31;
+  }
+  .mid-container{
+    background-image: linear-gradient(#ECECEC, #ffffff);
+    padding:5px 0 5px 0;
+    }
+    .logo-txt-left{
+      color:#FE7C31;
+    }
+    .logo-txt-left,.logo-txt-right{
+      font-size: 20px;
+    }
+ 
+    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus, .btn-primary:active:focus{
+      background-color: #FE7C31!important;
+      border-color: #FE7C31 !important;
+    }
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+ }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
